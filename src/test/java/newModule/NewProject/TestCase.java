@@ -17,8 +17,8 @@ public class TestCase {
 	@Test
 	public void TC01() throws InterruptedException
 	{
-		System.setProperty("webdriver.gecko.driver", "resources/geckodriver.exe");
-		WebDriver driver = new FirefoxDriver();
+		System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
 		driver.get("https://twitter.com/stepin_forum");
 		
 		List<WebElement> lstWe = driver.findElements(By.xpath("//div[@title='Retweet']/following-sibling::span/span[@class='ProfileTweet-actionCountForPresentation']"));
